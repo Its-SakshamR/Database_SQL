@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          
+        <title>Saksham Raj</title>
+
+        <style>
+            .navbar {
+                background: white;
+                position: relative;
+            }
+            
+            .links {
+                display: none;
+            }
+            
+            .heading a:nth-child(2) {
+                color: green;
+                text-decoration: none;
+                font-size: 20px;
+                display: block;
+                padding: 7px;
+                margin-left: 150px;
+            }
+            
+            .heading a i {
+                color: green;
+                padding: 10px;
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            
+            .heading a i:hover {
+                background-color: rgb(0, 0, 0);
+                color: rgb(255, 255, 255);
+            }
+            
+            .links {
+                background-color: rgb(190, 196, 190);
+            }
+            
+            .links a {
+                color: green;
+                padding: 5px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                display: block;
+                text-align: center;
+                border-bottom: 1px solid white;
+            }
+            
+            .links a:hover {
+                background-color: green;
+                color: white;
+            }
+            
+            .hi{
+                background-attachment: cyan;
+            }
+
+            .column {
+                float: left;
+                width: 33.33%;
+            }
+
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+ 
+            .intro{
+                font-size: x-large;
+            }
+
+            body {
+                background-image: url('back4.jpg');
+            }
+        </style>
+    </head>
+    <body class="hi">
+            <div class="navbar">
+                <div class="heading">
+                    <a href="#hamburger-icon" onclick="Menu()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <a href="home.html" style="color: green;"> Saksham Raj </a>
+                </div>
+                <div class="links">
+                    <a href="edu.html"> Education </a>
+                    <a href="achieve.html"> Achievements </a>
+                    <a href="time.html"> Time Table </a>
+                    <a href="hobby.html"> Hobbies </a>
+                </div>
+            </div>
+
+        <script>
+            function Menu() {
+                const sak = document.querySelector('.links');
+            
+                if (sak.style.display === "none") {
+                    sak.style.display = "block";
+                }
+                else {
+                    sak.style.display = "none";
+                }
+            }
+        </script>
+    <pre class="intro">
+        Hello guys, this is your host for the next 10-15 minutes and I am here to take you through the best journey of a person, <b>his life!</b>.
+        
+        It all started from a small city in Jharkhand, when I came on this beautiful planet in the year 2004.
+        Time passed and I grew up with two really caring parents, went to school and completed my 10th in my home city only. You can checkout my academics from the hamburger menu.
+
+        After my boards, a huge wave hit the world, probably the biggest pandemic Earth saw in 21st century, <b>COVID!</b> And I am sure you all also definitely remember it,
+        and so it has been tough times for all of us, a little more tough for me as this was also the period of my JEE preparation, but thatnks to god,
+        I, with my family, successfully passed those tough times and I am very happy to state that I also achieved what I always dreamt, my dream college!
+        
+        Talking about some of my interests, I am very passionate about <b>Cricket</b> and <b>Movies</b>, I also like listening to songs and reading novels in free time!
+    <center><img src="lotus.jpeg" alt="Me" style="width:800px;height:800px;"></center>
+
+
+    </pre>
+    <div class="row">
+    <a href="mailto:22b0964@iitb.ac.in"><div class="column"><img src="mailme.png" style="width:350px;height:250px;"></div></a>
+    <a href="https://www.instagram.com/rajsaksham9"><div class="column"><img src="Instagram.webp" style="width:250px;height:250px;"></div></a>
+    <a href="https://www.twitter.com/Its_SakshamR"><div class="column"><img src="Twitter.png" style="width:250px;height:250px;"></div></a>
+    </div>
+    </body>
+</html>

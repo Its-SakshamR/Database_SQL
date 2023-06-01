@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          
+        <title>Saksham Raj</title>
+
+        <style>
+            .navbar {
+                background: white;
+                position: relative;
+            }
+            
+            .links {
+                display: none;
+            }
+            
+            .heading a:nth-child(2) {
+                color: green;
+                text-decoration: none;
+                font-size: 20px;
+                display: block;
+                padding: 7px;
+                margin-left: 150px;
+            }
+            
+            .heading a i {
+                color: green;
+                padding: 10px;
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            
+            .heading a i:hover {
+                background-color: rgb(0, 0, 0);
+                color: rgb(255, 255, 255);
+            }
+            
+            .links {
+                background-color: rgb(190, 196, 190);
+            }
+            
+            .links a {
+                color: green;
+                padding: 5px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                display: block;
+                text-align: center;
+                border-bottom: 1px solid white;
+            }
+            
+            .links a:hover {
+                background-color: green;
+                color: white;
+            }
+            
+            .hi{
+                background-attachment: cyan;
+            }
+
+            table,th,td{
+                background-color: white;
+                color: black;
+                font-size: x-large;
+                border-width: 1px;
+                border-color: black;
+                border-style: double;
+            }
+
+            body {
+                background-image: url('back4.jpg');
+            }
+        </style>
+    </head>
+    <body class="hi">
+            <div class="navbar">
+                <div class="heading">
+                    <a href="#hamburger-icon" onclick="Menu()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <a href="home.html" style="color: green;"> Saksham Raj </a>
+                </div>
+                <div class="links">
+                    <a href="edu.html"> Education </a>
+                    <a href="achieve.html"> Achievements </a>
+                    <a href="time.html"> Time Table </a>
+                    <a href="hobby.html"> Hobbies </a>
+                </div>
+            </div>
+
+        <script>
+            function Menu() {
+                const sak = document.querySelector('.links');
+            
+                if (sak.style.display === "none") {
+                    sak.style.display = "block";
+                }
+                else {
+                    sak.style.display = "none";
+                }
+            }
+        </script>
+        <table>
+            <tr>
+                <th><b>Day/Time</b></th>
+                <th>8:30-9:30</th>
+                <th>9:30-10:30</th>
+                <th>10:30-11:30</th>
+                <th>11:00-12:30</th>
+                <th>11:30-12:30</th>
+                <th>2:00-3:00</th>
+                <th>2:00-5:00</th>
+                <th>4:00-5:00</th>
+            </tr>
+            <tr>
+                <th>Monday</th>
+                <td>MA106/MA108</td>
+                <td>PH111/PH112</td>
+                <td>MS101</td>
+                <td>-</td>
+                <td>CS104</td>
+                <td>-</td>
+                <td>CH117</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <th>Tuesday</th>
+                <td>CS104</td>
+                <td>MA106/MA108</td>
+                <td>PH111/PH112</td>
+                <td>MS101</td>
+                <td>-</td>
+                <td>-</td>
+                <td>MS101</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <th>Wednesday</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>BB101</td>
+                <td>-</td>
+                <td>PH111/PH112</td>
+                <td>-</td>
+                <td>MA106/MA108</td>
+            </tr>
+            <tr>
+                <th>Thursday</th>
+                <td>BB101</td>
+                <td>CS104</td>
+                <td>MA106/MA108</td>
+                <td>-</td>
+                <td>PH111/PH112</td>
+                <td>-</td>
+                <td>CS104</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <th>Friday</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>BB101</td>
+                <td>-</td>
+                <td>-</td>
+                <td>MS101</td>
+                <td>-</td>
+            </tr>
+        </table>
+    </body>
+</html>
